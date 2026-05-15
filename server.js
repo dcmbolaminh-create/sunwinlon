@@ -32,7 +32,7 @@ let apiResponseData = {
     "Xuc_xac_3": null,
     "Tong": null,
     "Ket_qua": "",
-    "id": "@tiendataox",
+    "id": "@vanminh2603",
     "server_time": new Date().toISOString(),
     "update_count": 0
 };
