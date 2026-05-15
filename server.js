@@ -1596,7 +1596,7 @@ app.get('/api/sunwin/history', (req, res) => {
             "Xuc_xac_1": item.dice[0],
             "Xuc_xac_2": item.dice[1],
             "Xuc_xac_3": item.dice[2],
-            "id": "@tiendataox"
+            "id": "@vanminh2603"
         }));
     res.json(last100);
 });
