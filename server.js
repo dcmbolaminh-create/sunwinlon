@@ -269,9 +269,9 @@ function aiHtddLogic(history) {
         const overallTai = history.filter(h => h.result === 'Tài').length;
         const overallXiu = history.filter(h => h.result === 'Xỉu').length;
         if (overallTai > overallXiu + 2) {
-            return { prediction: 'Xỉu', reason: '[HuyDaiXu AI] Tổng thể Tài nhiều hơn → dự đoán Xỉu', source: 'HuyDaiXu AI' };
+            return { prediction: 'Xỉu', reason: '[vanminh AI] Tổng thể Tài nhiều hơn → dự đoán Xỉu', source: 'HuyDaiXu AI' };
         } else if (overallXiu > overallTai + 2) {
-            return { prediction: 'Tài', reason: '[HuyDaiXu AI] Tổng thể Xỉu nhiều hơn → dự đoán Tài', source: 'HuyDaiXu AI' };
+            return { prediction: 'Tài', reason: '[vanminh AI] Tổng thể Xỉu nhiều hơn → dự đoán Tài', source: 'HuyDaiXu AI' };
         } else {
             return { prediction: Math.random() < 0.5 ? 'Tài' : 'Xỉu', reason: '[HuyDaiXu AI] Cân bằng, dự đoán ngẫu nhiên', source: 'HuyDaiXu AI' };
         }
@@ -1460,7 +1460,7 @@ function connectWebSocket() {
                     "Xuc_xac_3": d3,
                     "Tong": total,
                     "Ket_qua": result,
-                    "id": "@cskh_huydaixu",
+                    "id": "@vanminh2603",
                     "server_time": now,
                     "update_count": (apiResponseData.update_count || 0) + 1
                 };
